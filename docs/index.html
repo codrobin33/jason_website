@@ -1,22 +1,147 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>The MAN with The VAN LLC</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  </head>
-  <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
+    <link rel="shortcut icon" type="image/jpg" href="imgs/favicon.jpg" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <div class="navbar-item is-size-4">
+                <strong>The MAN with The VAN LLC</strong>
+            </div>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </div>
+        <div id="navbarMenuHeroC" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item is-active">
+                    Home
+                </a>
+                <a class="navbar-item" href="#contact">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero is-fullheight has-background-white-ter">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+
+        </div>
+
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-vertical-center">
+                        <div class="content is-medium">
+                            <h1 class="title is-1 has-text-centered">The MAN with The VAN LLC</h1>
+                            <p class="subtitle is-3 has-text-centered">Delivery/Hauling Service</p>
+                            <ul>
+                                <li>Store delivery (large item from dept store)</li>
+                                <li>Donation haul away</li>
+                                <li>Craigslist/Letgo delivery</li>
+                                <li>Storage moves (clear out clutter before you sale)</li>
+                                <li>Junk removal</li>
+                                <li>Small business moves</li>
+                                <li>Motor cycle</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <figure class="image is-3by4">
+                            <img src="./imgs/jason_van.jpg">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <div id="contact" class="container has-text-centered">
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <h2 class="title is-2">Contact Us</h2>
+                <p class="subtitle is-5">Please fill in your name, email and a quick message and we will get back to
+                    you quickly.</p>
+                <br />
+                <form action="https://formspree.io/jason@theman-with-thevan.com" method="POST">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Name</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field is-expanded">
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Text input" name="name">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Email</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field is-expanded">
+                                <div class="control has-icons-left has-icons-right">
+                                    <input class="input" type="email" placeholder="Email input" name="_replyto">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Subject</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field is-expanded">
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Text input" name="subject">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Message</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field is-expanded">
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Textarea" name="message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="has-text-right">
+                        <button class="button is-link" value="Send">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-  </section>
-  </body>
+</body>
+
 </html>
